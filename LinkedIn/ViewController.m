@@ -36,7 +36,7 @@
     
     //  **************  Method to Form the URL after the above parameters are provided *************
     
-    NSString *getTheFormedAuthorizatioURl=[ViewController getTheFormedUrlForLinkedInAuthorization:@"75n69m2glhkycs" state:@"DCEEFWF45453sdffef4244" redirect:@"http://amaheshwari.com"];
+    NSString *getTheFormedAuthorizatioURl=[ViewController getTheFormedUrlForLinkedInAuthorization:@"" state:@"" redirect:@""];
     
     // load the URL on the View, if every thing goes fine the URl would load ont he webview and a linked In dialog fro entering USername and Password would come up
     
@@ -110,7 +110,7 @@
     
     // Form the POST request for the Access Token and send all the required info
     
-    NSString *getTheFormedUrlForAccessToken= [ViewController getTheUrlForAccessToken:@"75n69m2glhkycs" redirect:@"http://amaheshwari.com" secret:@"vGJEa2ryoRdbFeD8" code:getAuthorizationCode];
+    NSString *getTheFormedUrlForAccessToken= [ViewController getTheUrlForAccessToken:@"" redirect:@"" secret:@"" code:getAuthorizationCode];
     NSData *postData = [getTheFormedUrlForAccessToken dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%d",[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
